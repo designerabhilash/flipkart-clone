@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function repdigit(n) {
+            let ones = n % 10;
+            let tens = Math.floor(n / 10);
+            if(ones === tens) {
+                return 'Repdigit';
+            } 
+
+            return 'No Repdigit';
+        }
+
+        console.log(repdigit(23));
+    </script>
+</body>
+</html>
